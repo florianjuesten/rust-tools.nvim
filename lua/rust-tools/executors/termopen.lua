@@ -18,7 +18,7 @@ function M.execute_command(command, args, cwd)
   latest_buf_id = vim.api.nvim_create_buf(false, true)
 
   -- split the window to create a new buffer and set it to our window
-  utils.split(false, latest_buf_id)
+  utils.split(true, latest_buf_id)
 
   -- make the new buffer smaller
   utils.resize(false, "-5")
